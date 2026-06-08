@@ -1,0 +1,7 @@
+# Controls the "New Issue" chooser screen.
+blank_issues_enabled: false
+
+# contact_links:
+#   - name: TODO - this sends ppl somewhere else if they click it for GH issues idk if we need this for now
+#     url: TODO
+#     about: TODO

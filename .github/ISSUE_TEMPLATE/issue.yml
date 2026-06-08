@@ -1,0 +1,108 @@
+name: New Issue
+description: Create an issue for a feature, task, asset, or bug.
+labels: ["needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        To create an issue, fill in the boxes below. When you're done, hit **Create**.
+
+        > To assign yourself, use the **Assignees** box in the right-hand sidebar
+        > after the issue is created (or while creating it).
+  - type: dropdown
+    id: type
+    attributes:
+      label: Type
+      description: What kind of issue is this?
+      options:
+        - Feature / Task
+        - Bug
+        - Other
+    validations:
+      required: true
+  - type: dropdown
+    id: team
+    attributes:
+      label: Team
+      description: Which team owns this work?
+      options:
+        - Art
+        - Dev
+        - Music / Audio
+        - Design
+        - Other
+    validations:
+      required: true
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      description: How urgent is this?
+      options:
+        - High / blocking
+        - Medium
+        - Low / nice-to-have
+    validations:
+      required: true
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: A short description of the feature, task, or bug.
+      placeholder: e.g. Add a double-jump ability to the player character.
+    validations:
+      required: true
+  - type: textarea
+    id: todo
+    attributes:
+      label: What needs to be done
+      description: List the steps. You can tick these off as you go.
+      value: |
+        - [ ]
+        - [ ]
+        - [ ]
+    validations:
+      required: false
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      description: How do we know when the task is "done"?
+      value: |
+        - [ ]
+        - [ ]
+    validations:
+      required: false
+  - type: textarea
+    id: bug_details
+    attributes:
+      label: "🐞 Bug details (bugs only)"
+      description: >
+        If this is a bug, describe the steps to reproduce it, what you expected
+        to happen, and what actually happened.
+      placeholder: |
+        Steps to reproduce:
+        1.
+        2.
+
+        Expected:
+        Actual:
+    validations:
+      required: false
+  - type: textarea
+    id: references
+    attributes:
+      label: References / Assets
+      description: >
+        Links to design docs, concept art, audio files, related issues, etc.
+        You can drag-and-drop images and files straight into this box.
+    validations:
+      required: false
+  - type: input
+    id: blockers
+    attributes:
+      label: Dependencies / Blockers
+      description: Does this need other work finished first?
+      placeholder: e.g. Blocked by #67, or "needs texture"
+    validations:
+      required: false
