@@ -1,0 +1,84 @@
+name: "Feature / Task"
+description: "Something new to work on: mechanics, systems, features, chores."
+title: "[Feature]: "
+labels: ["needs-triage", "type: feature"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ### Creating a feature or task
+        Fill in the fields below and hit **Create** at the bottom.
+
+        **Assigning someone:** once the issue is created, use the **Assignees** box in the
+        right-hand sidebar. If you don't see it, ask for write access, and someone can add you.
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      description: How urgent is this?
+      options:
+        - "High - blocking other work"
+        - Medium
+        - "Low - nice to have"
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: "---\n### The work"
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: What is this, in a sentence or two?
+      placeholder: e.g. Add a double-jump ability to the player character.
+    validations:
+      required: true
+
+  - type: textarea
+    id: todo
+    attributes:
+      label: Steps / Checklist
+      description: Break it into smaller steps if you can. Tick them off as you go.
+      value: |
+        - [ ]
+        - [ ]
+        - [ ]
+    validations:
+      required: false
+
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Task Requirements
+      description: How will we know this is finished?
+      value: |
+        - [ ]
+        - [ ]
+    validations:
+      required: false
+
+  - type: markdown
+    attributes:
+      value: "---\n### Anything else"
+
+  - type: textarea
+    id: references
+    attributes:
+      label: References (optional)
+      description: >
+        Design docs, mockups, related issues, etc. You can drag and drop images
+        or files straight into this box.
+    validations:
+      required: false
+
+  - type: input
+    id: blockers
+    attributes:
+      label: Blocked by
+      description: Does this need something else finished first?
+      placeholder: e.g. Blocked by #67, or "needs the new UI kit"
+    validations:
+      required: false

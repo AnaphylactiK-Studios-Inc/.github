@@ -53,7 +53,7 @@ The **Project Board** is a Kanban and table that shows what everyone's working o
 
 | Resource | Link |
 | --- | --- |
-| Website | TBD<!-- TODO: link to your live site --> |
+| Website | https://anaphylactik-studios-inc.github.io/site/ |
 | MEGA Folder | https://mega.nz/folder/nkQWgb5Z#O4135r6KqAeE-rUXiYObig |
 | Google Drive | https://drive.google.com/drive/folders/1jTp-JcOGrPykL_-k24mL4gmU4n0zFjlr |
 | Trello Board | https://trello.com/b/WRLGOKg0/anaphylactik-studios |

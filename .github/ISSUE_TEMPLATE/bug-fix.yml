@@ -1,0 +1,62 @@
+name: "Bug Report"
+description: "Something is broken or not working the way it should."
+title: "[Bug]: "
+labels: ["needs-triage", "type: bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ### Reporting a bug
+        Describe the bug and how it happened as best as possible.
+
+        **Assigning someone:** use the **Assignees** box in the right-hand sidebar
+        once the issue is created.
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      description: How severe is the issue?
+      options:
+        - "High - blocking / game-breaking"
+        - "Medium - affects gameplay, has a workaround"
+        - "Low - minor or cosmetic"
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: "---\n### What happened"
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: What's wrong, in a sentence or two?
+      placeholder: e.g. Player falls through the floor in the second cave room.
+    validations:
+      required: true
+
+  - type: textarea
+    id: repro
+    attributes:
+      label: Steps to reproduce
+      description: What did you do, in order, right before this happened?
+      placeholder: |
+        1. Load the "Caves" level
+        2. Walk to the second room
+        3. Jump onto the ledge on the left
+    validations:
+      required: false
+
+  - type: markdown
+    attributes:
+      value: "---\n### Anything else"
+
+  - type: textarea
+    id: references
+    attributes:
+      label: Screenshots / Video (optional)
+      description: Drag and drop images, clips, or logs straight into this box.
+    validations:
+      required: false

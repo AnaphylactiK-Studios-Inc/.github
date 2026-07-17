@@ -1,0 +1,88 @@
+name: "Asset Request"
+description: "Task for a piece of art, audio, or other creative asset."
+title: "[Asset]: "
+labels: ["needs-triage", "type: asset"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ### Requesting an asset
+        Use this for anything you need someone to make — a sprite, a model, a sound
+        effect, a music track, an animation.
+
+        **Assigning someone:** use the **Assignees** box in the right-hand sidebar
+        once the issue is created.
+
+  - type: dropdown
+    id: asset_type
+    attributes:
+      label: Asset type
+      description: What kind of asset is this?
+      options:
+        - Art - 2D / UI / etc.
+        - Art - 3D model
+        - Animation
+        - Audio - SFX
+        - Audio - Music
+        - Other
+    validations:
+      required: true
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      description: How urgent is this?
+      options:
+        - "High — blocking other work"
+        - Medium
+        - "Low — nice to have"
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: "---\n### The request"
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: Task Description
+      description: Describe the asset. What's it for, and where will it be used?
+      placeholder: e.g. A short "coin pickup" SFX, used whenever the player collects currency.
+    validations:
+      required: true
+
+  - type: textarea
+    id: specs
+    attributes:
+      label: Specifications
+      description: >
+        Size, format, length, mood, style references, etc.
+      placeholder: |
+        e.g. ~1 second, metallic sound, sounds similar to other pickup SFX.
+    validations:
+      required: false
+
+  - type: markdown
+    attributes:
+      value: "---\n### Anything else"
+
+  - type: textarea
+    id: references
+    attributes:
+      label: References (optional)
+      description: >
+        Drag and drop reference images, audio clips, or links straight into
+        this box.
+    validations:
+      required: false
+
+  - type: input
+    id: blockers
+    attributes:
+      label: Blocked by
+      description: Does this need something else finished first?
+      placeholder: e.g. Blocked by #42, or "needs final character design"
+    validations:
+      required: false
