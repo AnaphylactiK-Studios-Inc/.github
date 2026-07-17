@@ -34,9 +34,9 @@ body:
       label: Priority
       description: How urgent is this?
       options:
-        - "High — blocking other work"
+        - "High - blocking other work"
         - Medium
-        - "Low — nice to have"
+        - "Low - nice to have"
     validations:
       required: true
 
