@@ -16,7 +16,7 @@ Each game and our website lives in its own repository with their own code/files,
 | --- | --- | --- |
 | **Website** | Public website | https://github.com/AnaphylactiK-Studios-Inc/site
 | **.github** | Configuration files for the page | https://github.com/AnaphylactiK-Studios-Inc/.github
-| **Game TBD** | For a game that doesn't exist yet o_O | 
+| **PDK** | New PDK game in Godot | https://github.com/AnaphylactiK-Studios-Inc/pdk
 
 ---
 
@@ -24,7 +24,7 @@ Each game and our website lives in its own repository with their own code/files,
 
 Features, tasks, bugs, and asset requests can be tracked using GH Issues. Ideally we replace assigning stuff just in chat/calls by using this feature instead. 
 
-Note we do also have the [Trello Board](https://trello.com/b/WRLGOKg0/anaphylactik-studios) to track issues!
+Note we do also have the [Kanban Board](https://github.com/orgs/AnaphylactiK-Studios-Inc/projects/1/views/2) to track issues!
 
 #### **To create an issue:**
 
@@ -56,7 +56,6 @@ The **Project Board** is a Kanban and table that shows what everyone's working o
 | Website | https://anaphylactik-studios-inc.github.io/site/ |
 | MEGA Folder | https://mega.nz/folder/nkQWgb5Z#O4135r6KqAeE-rUXiYObig |
 | Google Drive | https://drive.google.com/drive/folders/1jTp-JcOGrPykL_-k24mL4gmU4n0zFjlr |
-| Trello Board | https://trello.com/b/WRLGOKg0/anaphylactik-studios |
 | Itch.io | https://anaphylactik-studios.itch.io/ |
 
 ---
